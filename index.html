@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Include CSS -->
+    <link rel="stylesheet" href="css/bootstrap-4.0.0.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Task </title>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <!-- Show Sidebar Button -->
+        <a id="show-sidebar" class="show-sidebar-hidden">
+            <i class="fa fa-chevron-right"></i>
+        </a>
+        <!-- Sidebar Start -->
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <i class="fa fa-home"></i>
+                <a>Task</a>
+                <span id="hide-sidebar">
+                    <i class="fa fa-chevron-left"></i>
+                </span>
+            </div>
+            <div class="sidebar-content">
+                <div class="menu-tabs">
+                    <ul class="nav nav-tabs nav-justified">
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#globals">Globals</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#widgets">Widgets</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#blocks">Blocks</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane container fade" id="globals">
+                        <h4>Globals</h4>
+                    </div>
+                    <div class="tab-pane container active" id="widgets">
+                        <!-- Search Bar -->
+                        <div class="form-group search-bar">
+                            <span class="fa fa-search search-bar-icon"></span>
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+
+                        <!-- Widgets list -->
+                        <div class="widgets-list text-center mt-3">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="widget" id="section">
+                                        <i class="fa fa-th-list"></i>
+                                        <a class="widget-name widget-icon">Section</a>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="widget" id="heading">
+                                        <i class="fa fa-header widget-icon"></i>
+                                        <a class="widget-name">Heading</a>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="widget" id="image">
+                                        <i class='fa fa-image widget-icon'></i>
+                                        <a class="widget-name">Image</a>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="widget" id="video">
+                                        <i class='fa fa-youtube-play widget-icon'></i>
+                                        <a class="widget-name">Video</a>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="widget" id="icon">
+                                        <i class='fa fa-tag widget-icon'></i>
+                                        <a class="widget-name">Icon</a>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="widget" id="editor">
+                                        <i class='fa fa-edit widget-icon'></i>
+                                        <a class="widget-name">Editor</a>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="widget" id="button">
+                                        <i class='fa fa-plus-circle widget-icon'></i>
+                                        <a class="widget-name">Button</a>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="widget" id="form">
+                                        <i class='fa fa-table widget-icon'></i>
+                                        <a class="widget-name">Form</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane properties-tab fade" id="blocks">
+                        <h4>Blocks</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar-footer">
+                <a href="#">
+                    <i class="fa fa-cog"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-folder"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-mobile"></i>
+                </a>
+                <a href="#">
+                    <button class="update-btn">Update</button>
+                </a>
+            </div>
+        </div>
+        <!-- Sidebar End -->
+        <!-- Page Content Start -->
+        <div class="page-content sidebar-on">
+            <div class="main">
+                <div class="droppable"></div>
+            </div><!-- main end -->
+        </div><!-- page-content end -->
+    </div><!-- page-wrapper end -->
+    <!-- Editor icons -->
+    <div class="hide" id="editor-container">
+        <div class="editor-container">
+            <div class="widget-editor">
+                <!-- <ul> -->
+                <li class="editor-icon del"><i class="fa fa-trash"></i></li>
+                <li class="editor-icon cpy"><i class="fa fa-copy"></i></li>
+                <li class="editor-icon edt"><i class="fa fa-edit"></i></li>
+                <!-- </ul> -->
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
